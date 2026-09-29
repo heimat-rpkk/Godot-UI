@@ -26,28 +26,28 @@ MainMenu (Control)
 │
 ├── Background (TextureRect)  <-- Taustakuva (tai Camera2D / SubViewportContainer)
 │
-├── MainUI (MarginContainer)  <-- Pitää UI-elementit pois ruudun aivan reunoista
+├── MainUI (PanelContainer)  <-- Taustaväri, koko määräytyy sisällön mukaan (voidaan listätä myös MarginContainer)
 │   │
-│   ├── MenuCenter (VBoxContainer)  <-- Keskittää logon ja napit pystysuunnassa
-│   │   │
-│   │   ├── TitleLabel (Label)  <-- Pelin otsikko "MYSTIC WOODS"
-│   │   │
-│   │   └── ButtonContainer (VBoxContainer)  <-- Päävalikon napit
-│   │       ├── StartButton (Button) <-- Peli alkaa
-│   │       ├── ContinueButton (Button)
-│   │       ├── LoadButton (Button)
-│   │       ├── SettingsButton (Button) <-- Näyttää SettingsPanelin
-│   │       ├── CreditsButton (Button)
-│   │       └── QuitButton (Button) <-- Poistu pelistä
-│   │
-│   └── SettingsPanel (PanelContainer)  <-- Oikeassa reunassa oleva asetusikkuna
-│       └── TabContainer
-│           ├── AudioTab (VBoxContainer)
-│           │   ├── MasterVolSlider (HSlider)
-│           │   ├── MusicVolSlider (HSlider)
-│           │   └── SFXVolSlider (HSlider)
-│           ├── VideoTab (VBoxContainer)
-│           └── ControlsTab (VBoxContainer)
+│   └── MenuCenter (VBoxContainer)  <-- Keskittää logon ja napit pystysuunnassa
+│       │
+│       ├── TitleLabel (Label)  <-- Pelin otsikko "MYSTIC WOODS"
+│       │
+│       └── ButtonContainer (VBoxContainer)  <-- Päävalikon napit
+│           ├── StartButton (Button) <-- Peli alkaa
+│           ├── ContinueButton (Button)
+│           ├── LoadButton (Button)
+│           ├── SettingsButton (Button) <-- Näyttää SettingsPanelin
+│           ├── CreditsButton (Button)
+│           └── QuitButton (Button) <-- Poistu pelistä
+│
+├── SettingsPanel (PanelContainer)  <-- Oikeassa reunassa oleva asetusikkuna
+│    └── TabContainer
+│        ├── AudioTab (VBoxContainer)
+│        │   ├── MasterVolSlider (HSlider)
+│        │   ├── MusicVolSlider (HSlider)
+│        │   └── SFXVolSlider (HSlider)
+│        ├── VideoTab (VBoxContainer)
+│        └── ControlsTab (VBoxContainer)
 │
 ├── BottomRightLayout (VBoxContainer)  <-- Ankkuroitu oikeaan alakulmaan (Bottom-Right)
 │   │
